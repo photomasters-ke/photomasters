@@ -44,12 +44,12 @@
         <div class="row wide">
             <div class="small-12 columns">
                 <p class="links">
-                    <a href="index.html">Home</a>
-                    <a href="categories.html">Categories</a>
-                    <a href="become-a-maestro.html">Become a Maestro</a>
-                    <a href="pricing.html">Pricing</a>
-                    <a href="about-us.html">About</a>
-                    <a href="contact-us.html">Get In Touch</a>
+                    <a href="{% url 'booking:home' %}">Home</a>
+                    <a href="{% url 'booking:categories' %}">Categories</a>
+                    <a href="{% url 'booking:maestro' %}">Become a Maestro</a>
+                    <a href="{% url 'booking:pricing' %}">Pricing</a>
+                    <a href="{% url 'booking:about' %}">About</a>
+                    <a href="{% url 'booking:contact' %}">Get In Touch</a>
                     <a href="terms-and-condition.html">Terms</a>
                 </p>
                 <p class="copywrite">© All Rights Reserved. PhotoMasters Kenya 2017</p>
