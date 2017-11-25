@@ -1,11 +1,12 @@
 {% extends "booking/base.html" %} 
+{% load static %}
 {% block content %}
 <section class="hero hero-overlay">
     <div class="inner">
         <nav class="top-nav">
             <ul class="left">
                 <a href="index.html">
-                    <img src="img/icons/photoMaster.png">
+                    <img src="{% static 'img/icons/photoMaster.png' %}">
                 </a>
             </ul>
             <ul class="right">
@@ -35,7 +36,7 @@
                 <span>1</span>
             </h2>
             <div class="step-content">
-                <img src="img/12-128.png">
+                <img src="{% static 'img/12-128.png'%}">
                 <div class="step-description">search through our list of professional and talented photographers profile and portfolios and choose the
                     one that best suits your needs </div>
             </div>
@@ -45,7 +46,7 @@
                 <span>2</span>
             </h2>
             <div class="step-content">
-                <img src="img/booking-make-reservation-calendar_-128.png">
+                <img src="{% static 'img/booking-make-reservation-calendar_-128.png' %}">
                 <div class="step-description">select the number of days you will want to reserve the photographer and click on the continue button</div>
             </div>
         </div>
@@ -54,7 +55,7 @@
                 <span>3</span>
             </h2>
             <div class="step-content">
-                <img src="img/Forms_Contact_2-128.png">
+                <img src="{% static 'img/Forms_Contact_2-128.png'%}">
                 <div class="step-description">fill in your contact information in the relevant inputs for further communictaions from our side.</div>
             </div>
         </div>
@@ -63,7 +64,7 @@
                 <span>4</span>
             </h2>
             <div class="step-content">
-                <img src="img/Online_Payment_2-128.png">
+                <img src="{% static 'img/Online_Payment_2-128.png'%}">
                 <div class="step-description">you can always pay upfront half of the amount and the remaing balance after the shoot completion to access
                     your photos.</div>
             </div>
