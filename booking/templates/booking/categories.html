@@ -1,0 +1,37 @@
+{% extends "booking/base.html" %} 
+{% load static %}
+{% block extended_head %} 
+<link rel="stylesheet" href="{% static 'css/nav.css' %}" type="text/css">
+{% endblock %}
+{% block nav-content %}
+<nav class="nav ">
+    <div class="nav-center">
+        <a class="toggle-nav" href="#">&#9776;</a>
+        <div class="nav-mobile">
+            <ul class="left">
+                <a href="{% url 'booking:home' %}">
+                    <img src="{% static 'img/icons/photoMaster.png' %}" class="logo-img">
+                </a>
+                <li class="btn-4Parent">
+                    <a href="{% url 'booking:home'%}" class="btn-4">Home</a>
+                </li>
+                <li class="btn-4Parent">
+                    <a href="{% url 'booking:categories' %}" class="btn-4">Categories</a>
+                </li>
+                <li class="btn-4Parent">
+                    <a href="{% url 'booking:pricing' %}" class="btn-4">pricing</a>
+                </li>
+                <li class="btn-4Parent">
+                    <a href="{% url 'booking:maestro' %}" class="btn-4">Become A Maestro</a>
+                </li>
+                <li class="btn-4Parent">
+                    <a href="{% url 'booking:about' %}" class="btn-4"> About Us</a>
+                </li>
+                <li class="btn-4Parent">
+                    <a href="{% url 'booking:contact' %}" class="btn-4">get in touch</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% endblock%}
